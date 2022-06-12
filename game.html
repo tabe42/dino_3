@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEC Dino✨</title>
+    <link rel="stylesheet" href="game.css" />
+    <script src="./scripts/game/main.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="./scripts/firebase/fbconfig.js"></script>
+    <script src="scripts/firebase/fb.js" defer></script>
+  </head>
+  <body>
+    <div class="root">
+      <nav>
+        <!-- add nav content here -->
+      </nav>
+    </div>
+    <button id="loginButton">login</button>
+    <div class="world" data-world>
+      <div class="score" data-score>0</div>
+      <img src="imgs/ground.png" class="ground" data-ground />
+      <img src="imgs/ground.png" class="ground" data-ground />
+      <img src="imgs/dino-stationary.png" class="dino" data-dino />
+      <div class="start-screen" data-start-screen>
+        <iframe src="modal/index.html" frameborder="0"> </iframe>
+      </div>
+    </div>
+  </body>
+</html>

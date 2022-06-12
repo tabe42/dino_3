@@ -8,23 +8,28 @@
     <title>🔨 Tailwind VanillaJS Boilerplace</title>
   </head>
   <body>
-    <div class="flex flex-col items-center">
-      <span
-        class="
-          text-4xl text-center
-          my-20
-          bg-red-500
-          rounded-md
-          py-2
-          px-4
-          transform
-          -rotate-3
-          text-white
-        "
-      >
-        A simple boilerplate that actually works! 🔨
-      </span>
+    <div class="min-h-screen overflow-hidden">
+      <div class='flex min-w-screen justify-center p-4 text-lg font-semibold border-b-2  bg-white'>
+        <ul class='nav flex flex-row items-center justify-evenly w-2/3 space-evenly'>
+            <li class='ease-in hover:scale-[1.1] transform transition duration-150'><a href="index.html">Home</a></li>
+            <li class='ease-in hover:scale-[1.1] transform transition duration-150'><a href="./pages/game.html">Game</a></li>
+            <li class='ease-in hover:scale-[1.1] transform transition duration-150'><a href="score.html">Score</a></li>
+            <li class='ease-in hover:scale-[1.1] transform transition duration-150'><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
     </div>
+      <div>
+        <img class='scale-[1] translate-y-[-46rem]' src="./test3.gif" alt="alter"/>
+      </div>
+      <div class='flex flex-none'>
+        <a href="game.html" class="scale-150 translate-x-[36rem] translate-y-[-75rem]  relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium  rounded-lg group bg-transparent border-2 border-gray-600 opacity-90   hover:text-white hover:bg-green-500 dark:text-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800  ">
+        <span class="relative px-24 py-3 transition-all ease-in duration-75 bg-transparent  rounded-md group-hover:bg-opacity-0">
+            Click to Start
+        </span>
+      </a>
+      </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
+
+
