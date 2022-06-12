@@ -1,3 +1,4 @@
+const loginButton = document.querySelector("#loginButton");
 const app = firebase.initializeApp(firebaseConfig);
 var provider = new firebase.auth.GoogleAuthProvider();
 
@@ -24,3 +25,5 @@ const handleDbSubmit = async () => {
   const photoUrl = user.photoURL;
   console.log(displayName, email, photoUrl);
 };
+
+loginButton.addEventListener("click", handleDbSubmit);
